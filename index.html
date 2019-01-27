@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Flex Demo</title>
+</head>
+<body>
+    <nav class="nav-wrapper" id="nav">
+        <div class="nav-item" id="nav-item">Link</div>
+        <div class="nav-item" id="nav-item">Link</div>
+        <div class="nav-item" id="nav-item">Link</div>
+      <i id="menu-toggle">X</i>
+    </nav>
+  <div class="container">
+    <div class="section section-one">
+      <h3>Section</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi ipsa eius libero, asperiores, vero nobis quisquam laudantium tempore voluptatem? Sunt architecto consequuntur, officiis ipsum?</p>
+    </div>
+    <div class="section section-two">
+      <h3>Section Two</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi ipsa eius libero, asperiores, vero nobis quisquam laudantium tempore voluptatem? Sunt architecto consequuntur, officiis ipsum?</p>
+    </div>
+    <div class="section section-three">
+      <h3>Section</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi ipsa eius libero, asperiores, vero nobis quisquam laudantium tempore voluptatem? Sunt architecto consequuntur, officiis ipsum?</p>
+    </div>
+  </div>
+    <footer class="footer content-padding">
+        <div class="footer-link-container ">
+          <div class="footer-left footer-content">
+            <h3>Who are we</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero repellat numquam, suscipit ut laboriosam ipsam! Accusantium provident commodi, numquam beatae dolorum. Ipsa tempora architecto consectetur facere officia, quod suscipit inventore nostrum impedit, maiores quasi ad voluptatibus rem ipsam reiciendis vero veritatis quam, nesciunt iste.</p>
+          </div>
+          <div class="footer-right footer-content">
+            <h3>Resources</h3>
+            <div class="footer-link">Link</div>
+            <div class="footer-link">Link</div>
+            <div class="footer-link">Link</div>
+          </div>
+        </div>
+    </footer>
+  </div>
+</body>
+  <script type="text/javascript">
+  let toggleButton = document.querySelector('#menu-toggle');
+  let navItems = document.querySelector('#nav-item');
+  let nav = document.querySelector('#nav');
+
+  toggleButton.addEventListener('click', function(){
+    nav.classList.toggle('nav-open')
+    navItems.classList.toggle('nav-items')
+  });
+
+
+  </script>
+
+</script>
+</html>

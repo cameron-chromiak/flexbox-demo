@@ -9,10 +9,10 @@
   <title>Flex Demo</title>
 </head>
 <body>
-    <nav class="nav-wrapper" id="nav">
-        <div class="nav-item" id="nav-item">Link</div>
-        <div class="nav-item" id="nav-item">Link</div>
-        <div class="nav-item" id="nav-item">Link</div>
+    <nav class="nav-wrapper nav-open" id="nav">
+        <div class="nav-item nav-item-open" id="nav-item">Link</div>
+        <div class="nav-item nav-item-open" id="nav-item">Link</div>
+        <div class="nav-item nav-item-open" id="nav-item">Link</div>
       <i id="menu-toggle">X</i>
     </nav>
   <div class="container">
@@ -51,8 +51,8 @@
   let nav = document.querySelector('#nav');
 
   toggleButton.addEventListener('click', function(){
-    nav.classList.toggle('nav-open')
-    navItems.classList.toggle('nav-items')
+    navItems.style.display = 'inherit';
+    nav.style.height = '15vh'
   });
 
 

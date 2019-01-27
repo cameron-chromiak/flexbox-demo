@@ -58,6 +58,9 @@ ul{
     display: flex;
     flex-direction: row;
   }
+  #menu-toggle{
+    display: none;
+  }
   .container{
     display: flex;
     justify-content: space-around;
